@@ -541,12 +541,11 @@ main {
 }
 
 @media (max-width: 640px) {
-  .section-hero,
-  .section-about,
-  .section-work-contact {
-    padding: 2rem 1rem;
+  .section-work-contact,
+  .content-section.active {
+    display: flex;
+    flex-direction: column;
   }
-
   .hero-info {
     flex-direction: column;
     padding: 1.2rem;
