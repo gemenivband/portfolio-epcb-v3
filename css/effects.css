@@ -1,0 +1,55 @@
+.main-logo:hover {
+  color: gray;
+  transition: 1s ease;
+}
+
+.main-nav-link:hover {
+  color: gray;
+  transition: 1s ease;
+}
+
+.main-button:hover {
+  color: gray;
+  transition: 1s ease;
+}
+
+.btn-view:hover {
+  background-color: gray;
+  transition: 1s ease;
+  color: black;
+}
+/* =========================
+   MARQUEE
+========================= */
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* Keyframe for ticker */
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Optional smooth fade-in effect when switching screens */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
