@@ -549,12 +549,20 @@ main {
   .hero-info {
     flex-direction: column;
     padding: 1.2rem;
+    align-items: center;
   }
 
   .hero-img {
     width: 70%;
     max-width: 70%;
     height: auto;
+  }
+  .hero-name {
+    align-items: center;
+  }
+
+  .hero-name h1 {
+    text-align: center;
   }
 
   .hero-number-list {
@@ -583,5 +591,12 @@ main {
   .work-img-info a {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-info {
+    align-items: center;
+    margin: 4.2rem 2.2rem 5.2rem -1.2rem;
   }
 }
