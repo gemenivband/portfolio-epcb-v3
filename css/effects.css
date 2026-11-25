@@ -53,3 +53,9 @@
     transform: translateY(0);
   }
 }
+
+.content-section.active {
+  display: flex;
+  flex-direction: row;
+  animation: fadeIn 0.45s ease-in-out;
+}
