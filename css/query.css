@@ -1,0 +1,181 @@
+/* =========================
+   RESPONSIVE BREAKPOINTS
+========================= */
+
+@media (max-width: 992px) {
+  body {
+    flex-direction: column;
+  }
+
+  .header {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    position: sticky;
+    top: 0;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    flex-direction: column;
+    padding: 1.2rem 1.8rem;
+  }
+
+  .burger-btn {
+    display: block;
+  }
+
+  .nav-container {
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-container.active {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  main {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    min-width: 0;
+  }
+
+  .hero-info,
+  .hero-featured,
+  .hero-name,
+  .hero-featured-skills {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .about-me {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+
+  .section-work-contact {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-hero {
+    padding: 2rem 1.2rem;
+  }
+
+  .section-work-contact,
+  .content-section.active {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-info {
+    flex-direction: column;
+    padding: 1.2rem;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero-img {
+    width: 70%;
+    max-width: 240px;
+    height: auto;
+  }
+
+  .hero-name {
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero-name h1 {
+    text-align: center;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .hero-skills {
+    text-align: center;
+  }
+
+  .hero-signature {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-number-list {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-label {
+    grid-template-columns: 1fr;
+  }
+
+  .about-logo-skill {
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-details,
+  .works-view {
+    padding: 1.5rem;
+  }
+
+  .work-img-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .work-img-info a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 620px) {
+  .section-work-contact.content-section:not(.active):not(.force-show) {
+    display: none;
+  }
+
+  .section-work-contact.content-section.active,
+  .section-work-contact.content-section.force-show {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-hero {
+    padding: 1.5rem 1rem;
+  }
+
+  .hero-info {
+    padding: 1rem;
+    gap: 1.2rem;
+  }
+
+  .hero-img {
+    width: 85%;
+    max-width: 220px;
+  }
+
+  .hero-name h1 {
+    font-size: 1.45rem;
+  }
+
+  .hero-task {
+    font-size: 0.95rem;
+  }
+}

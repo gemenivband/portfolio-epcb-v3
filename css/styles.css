@@ -597,6 +597,6 @@ main {
 @media (max-width: 500px) {
   .hero-info {
     align-items: center;
-    margin: 4.2rem 2.2rem 5.2rem -1.2rem;
+    width: auto;
   }
 }

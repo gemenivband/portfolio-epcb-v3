@@ -94,3 +94,28 @@ if ("IntersectionObserver" in window) {
 } else {
   counters.forEach(animateCounter);
 }
+
+// Home
+const mainLogo = document.querySelector(".main-logo");
+
+if (mainLogo) {
+  mainLogo.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const targetId = mainLogo.dataset.target || "home";
+    const targetSection = document.getElementById(targetId);
+
+    document.querySelectorAll(".content-section").forEach((section) => {
+      section.classList.remove("active");
+    });
+
+    if (targetSection) {
+      targetSection.classList.add("active");
+    }
+
+    const navContainer = document.querySelector(".nav-container");
+    if (navContainer) {
+      navContainer.classList.remove("active");
+    }
+  });
+}
